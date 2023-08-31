@@ -6,6 +6,7 @@ import ArticlePage from "./pages/ArticlePage";
 import { Route, BrowserRouter, Routes } from "react-router-dom";
 import NavBar from "./NavBar";
 import NotFoundPage from "./pages/NotFoundPage";
+import axios from "axios";
 
 function App() {
   return (
