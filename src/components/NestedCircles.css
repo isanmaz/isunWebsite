@@ -1,0 +1,77 @@
+/* src/NestedCircles.css */
+body{
+ background-color: black;
+}
+
+.big-circle {
+    width: 1400px;
+    height: 1400px;
+    background-color: antiquewhite;
+    background-image: url(/public/moon.jpeg);
+    background-size:cover;
+  background-repeat: no-repeat;
+    
+    
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .small-circle {
+    width: 600px;
+    height: 600px;
+    background-color: transparent;
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 500ms;
+    transition-property: background;
+    display: grid;
+  }
+  
+  .circleText{
+    color: white;
+    display: grid;
+    justify-content: center;
+    justify-items: center; 
+    align-items: center;
+    align-content: center;  
+  }
+   h1{
+    color: white;
+    display: grid;
+    justify-content: center;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 7em;
+    padding: 0;
+    margin: 0;
+  }
+  .small-circle:hover{
+    border-color: white;
+    border-width: 20px;
+    border: 2px solid white;
+    background-color: black;
+    width: 900px;
+    height: 900px;
+    cursor: pointer;
+    background-image: url(/public/fish.jpeg);
+    background-repeat: no-repeat;
+ }
+ .bigMoon-content{
+  color: white;
+  font-family: system-ui;
+  font-weight: bolder;
+  font-size: 2em;
+  background-color: black;
+ }
+ .bigMoon-details{
+  background-color: rgba(246, 121, 5, 0.456);
+  text-align: justify;
+ }
+ .bigMoon-title{
+  color:black ;
+  font-size: 3em;
+ }
+ 
+  

@@ -19,6 +19,7 @@ const ArticlePage = () => {
     }
     fetchData();
   }, []);
+  
 
   const article = articles.find((article) => article.articleId === articleId);
   if (!article) {
