@@ -6,6 +6,7 @@ const details = [
         title: "Master of science - Computer Science-Software Engineering",
         place: "Technische Universität Kaiserslautern",
         details:
+          "Sep 2015-July 2019:<br />" +
           "Master thesis:<br />" +
           "Modeling and (semi-)automated instantiation of safety case patterns informed by, integrated safety models insafeTbox.<br />" +
           "Seminar: “Categorization of Safety Analysis methods for Embedded software systems”<br />" +
@@ -16,6 +17,7 @@ const details = [
         title: "Bachelor of Science - Information technology",
         place: "Azad University Tabriz Branch, Iran",
         details:
+          "Jan 2011-Jan 2015:<br />" +
           "Bachelor thesis: Wireless sensor networks in wild forest fires application",
       },
     ],
