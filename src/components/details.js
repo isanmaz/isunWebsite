@@ -10,7 +10,7 @@ const details = [
           "Master thesis:<br />" +
           "Modeling and (semi-)automated instantiation of safety case patterns informed by, integrated safety models insafeTbox.<br />" +
           "Seminar: “Categorization of Safety Analysis methods for Embedded software systems”<br />" +
-          "Project: Fraunhofer team-base software development project in cooperation with John Deere Intelligent Solution group Kaiserslautern.:<br />" +
+          "Project: Fraunhofer team-base software development project in cooperation with John Deere Intelligent Solution group Kaiserslautern.<br />" +
           "Responsible for software architecture.",
       },
       {
@@ -32,6 +32,7 @@ const details = [
           "As a developer I'm involved in analyzing and implementing the optimal solutions to implement and design Rest-ful APIs for EC.<br />" +
           "My team works as part of the MDI (Master Data Integration) to provide the Integrations for Intelligent Enterprise Suite (IES).",
         title: "Agile Developer",
+        place: "SAP SE",
       },
       {
         title: "Front-end Developer",

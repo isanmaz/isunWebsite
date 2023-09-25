@@ -5,17 +5,9 @@ import details from "./details";
 const NestedCircles = () => {
   const bigCircleRef = useRef(null);
   const smallCircleRefs = useRef([]);
-  const [textContent, setTextContent] = useState("");
   const [smallCircles, setSmallCircles] = useState(true);
   const [content, setDetails] = useState([]);
 
-  function showText(show) {
-    if (show === "skill") {
-      setTextContent("hello");
-    } else {
-      setTextContent("Skills");
-    }
-  }
   function changeSmallCircles(title) {
     setSmallCircles(!smallCircles);
     toggleDetails(title);
@@ -32,7 +24,7 @@ const NestedCircles = () => {
     }
     const bigCircle = bigCircleRef.current;
     const radius = bigCircle.offsetWidth / 2;
-    const smallerRadius = radius * 0.7;
+    const smallerRadius = radius * 0.55;
 
     const numberOfCircles = 4;
     const angleIncrement = (2 * Math.PI) / numberOfCircles;
@@ -107,11 +99,11 @@ const NestedCircles = () => {
                   <h2 className="bigMoon-title" key={index}>
                     {item.title}
                   </h2>
-                  <h3
+                  <p
                     className="bigMoon-content"
                     key={index}
                     dangerouslySetInnerHTML={{ __html: item.details }}
-                  ></h3>
+                  ></p>
                   {index === content.length - 1 && (
                     <button onClick={setSmallCircles}>Back</button>
                   )}

@@ -1,33 +1,39 @@
 /* src/NestedCircles.css */
 body{
  background-color: black;
+ overflow: auto;
+}
+.main-page {
+  justify-items: center;
 }
 
 .big-circle {
-    width: 1400px;
-    height: 1400px;
+    width: 700px;
+    height: 700px;
     background-color: antiquewhite;
     background-image: url(/public/moon.jpeg);
     background-size:cover;
-  background-repeat: no-repeat;
+    background-repeat: no-repeat;
     
     
     border-radius: 50%; 
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     position: relative;
   }
   
   .small-circle {
-    width: 600px;
-    height: 600px;
+    width: 200px;
+    height: 200px;
     background-color: transparent;
     border-radius: 50%;
     position: absolute;
     transition-duration: 500ms;
     transition-property: background;
     display: grid;
+    transition: transform 0.3s ease;
   }
   
   .circleText{
@@ -43,7 +49,7 @@ body{
     display: grid;
     justify-content: center;
     font-family:'Courier New', Courier, monospace;
-    font-size: 7em;
+    font-size: 2em;
     padding: 0;
     margin: 0;
   }
@@ -52,26 +58,39 @@ body{
     border-width: 20px;
     border: 2px solid white;
     background-color: black;
-    width: 900px;
-    height: 900px;
+    transform: scale(1.5);
     cursor: pointer;
     background-image: url(/public/fish.jpeg);
+    background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 50%;
+
+ }
+ .small-circle.left{
+  background-color: rgba(0, 166, 255, 0.426);
+  width: 200px;
+  height: 200px;
+  position:relative;
+  
  }
  .bigMoon-content{
   color: white;
   font-family: system-ui;
-  font-weight: bolder;
-  font-size: 2em;
-  background-color: black;
+  font-size: 1em;
+  overflow: auto;
  }
  .bigMoon-details{
-  background-color: rgba(246, 121, 5, 0.456);
+background-color: rgba(0, 0, 0, 0.554);
   text-align: justify;
+  font-size: 2em;
+  
  }
  .bigMoon-title{
-  color:black ;
-  font-size: 3em;
+  color:rgb(255, 255, 255) ;
+  background-color: black;
+  font-size: 1em;
  }
+
  
   
