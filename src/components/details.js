@@ -28,9 +28,7 @@ const details = [
       {
         details:
           "Dec 2019-present<br />" +
-          "Working as a back-end Java developer with an agile development team to develop API(s) for Successfactors Employee Central.<br />" +
-          "As a developer I'm involved in analyzing and implementing the optimal solutions to implement and design Rest-ful APIs for EC.<br />" +
-          "My team works as part of the MDI (Master Data Integration) to provide the Integrations for Intelligent Enterprise Suite (IES).",
+          "Working as a back-end Java developer with an agile development team to develop API(s) for Successfactors Employee Central.<br />",
         title: "Agile Developer",
         place: "SAP SE",
       },
@@ -39,7 +37,7 @@ const details = [
         place: "SAP ICN",
         details:
           "March 2023-August 2023<br />" +
-          "To further enhance my development skills, I pursued a fellowship at the SAP Innovation Center, where I excelled as a front-end developer.This experience provided me with valuable exposure to cutting-edge front-end technologies and the opportunity to work on smaller-scale projects independently.",
+          "To further enhance my development skills, I pursued a fellowship at the SAP Innovation Center, where I excelled as a front-end developer.",
       },
       {
         title: "Software Developer",
