@@ -29,8 +29,8 @@ const ArticlePage = () => {
     <>
       <h1>{article.title} </h1>
       <p>This article has {articleInfo.upvote}</p>
-      {article.content.map((par, index) => (
-        <p key={index}>{par}</p>
+      {article.content.map((par) => (
+        <p key={par}>{par}</p>
       ))}
       <CommentList comments={articleInfo.comments} />
     </>

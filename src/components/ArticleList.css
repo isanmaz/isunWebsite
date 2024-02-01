@@ -1,0 +1,32 @@
+.articles{
+    background-color:  black;
+    text-decoration: none;
+    padding-inline: 20%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+   
+    
+    
+}
+.article-list-item{
+    
+    text-decoration: none;
+    padding: 5em;
+   
+}
+.article-list-item:visited{
+    text-decoration: none;
+    color: white;
+    padding: 5em;
+   
+}
+.article-list-item a{
+    text-decoration: none;
+    padding: 5em;
+   
+}
+.article-list-title{
+    text-align: center;
+}
+
+ 

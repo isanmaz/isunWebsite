@@ -1,96 +1,104 @@
 /* src/NestedCircles.css */
-body{
- background-color: black;
- overflow: auto;
-}
-.main-page {
-  justify-items: center;
+body {
+  background-color: black;
+  overflow: auto;
+  margin: 0; 
 }
 
 .big-circle {
-    width: 700px;
-    height: 700px;
-    background-color: antiquewhite;
-    background-image: url(/public/moon.jpeg);
-    background-size:cover;
-    background-repeat: no-repeat;
-    
-    
-    border-radius: 50%; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    position: relative;
-  }
-  
-  .small-circle {
-    width: 200px;
-    height: 200px;
-    background-color: transparent;
-    border-radius: 50%;
-    position: absolute;
-    transition-duration: 500ms;
-    transition-property: background;
-    display: grid;
-    transition: transform 0.3s ease;
-  }
-  
-  .circleText{
-    color: white;
-    display: grid;
-    justify-content: center;
-    justify-items: center; 
-    align-items: center;
-    align-content: center;  
-  }
-   h1{
-    color: white;
-    display: grid;
-    justify-content: center;
-    font-family:'Courier New', Courier, monospace;
-    font-size: 2em;
-    padding: 0;
-    margin: 0;
-  }
-  .small-circle:hover{
-    border-color: white;
-    border-width: 20px;
-    border: 2px solid white;
-    background-color: black;
-    transform: scale(1.5);
-    cursor: pointer;
-    background-image: url(/public/fish.jpeg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 50%;
+  width: 70%; /* Adjust based on your layout */
+  /*max-width: 700px; /* Add a maximum width to prevent it from getting too large */
+  height: 0;
+  padding-bottom: 70%; /* Create a responsive square using padding */
+  background-image: url(/public/moon.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  margin: auto; /* Center the circle horizontally */
+}
 
- }
- .small-circle.left{
+.small-circle {
+  width: 30%;
+  height: 0;
+  padding-bottom: 30%; 
+  background-color: transparent;
+  border-radius: 50%;
+  position: absolute;
+  transition-duration: 500ms;
+  transition-property: background;
+  display: grid;
+  transition: transform 0.3s ease;
+  background-size: cover; /* Ensure the background image covers the entire element */
+}
+
+.small-circle:hover {
+  border-color: white;
+  border-width: 10%;
+  background-color: black;
+  transform: scale(1.5);
+  cursor: pointer;
+  background-image: url(/public/fish.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+
+.circleText {
+  color: white;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+}
+
+h1 {
+  color: white;
+  display: grid;
+  justify-content: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2em;
+  padding: 0;
+  margin: 0;
+}
+
+.small-circle:hover {
+  border-color: white;
+  border-width: 10%;
+  background-color: black;
+  transform: scale(1.5);
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.small-circle.left {
   background-color: rgba(0, 166, 255, 0.426);
-  width: 200px;
-  height: 200px;
-  position:relative;
-  
- }
- .bigMoon-content{
+  width: 30%;
+  height: 0;
+  padding-bottom: 30%;
+  position: relative;
+}
+
+.bigMoon-content {
   color: white;
   font-family: system-ui;
   font-size: 1em;
   overflow: auto;
- }
- .bigMoon-details{
-background-color: rgba(0, 0, 0, 0.554);
+}
+
+.bigMoon-details {
+  background-color: rgba(0, 0, 0, 0.554);
   text-align: justify;
   font-size: 2em;
-  
- }
- .bigMoon-title{
-  color:rgb(255, 255, 255) ;
+}
+
+.bigMoon-title {
+  color: rgb(255, 255, 255);
   background-color: black;
   font-size: 1em;
- }
-
- 
-  
+}
