@@ -1,6 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
-import "./NestedCircles.css";
+
 import details from "./details";
+import HomePage from "../pages/HomePage";
+import AboutPage from "../pages/AboutPage";
 
 const NestedCircles = () => {
   const bigCircleRef = useRef(null);
@@ -54,7 +56,7 @@ const NestedCircles = () => {
                 onClick={() => changeSmallCircles("hobby")}
               >
                 <>
-                  <h1>Hobbies</h1>
+                  <h1>Creative Work</h1>
                 </>
               </div>
             )}
@@ -64,7 +66,7 @@ const NestedCircles = () => {
                 onClick={() => changeSmallCircles("education")}
               >
                 <>
-                  <h1>Education</h1>
+                  <h1>Books</h1>
                 </>
               </div>
             )}
@@ -74,7 +76,7 @@ const NestedCircles = () => {
                 onClick={() => changeSmallCircles("experience")}
               >
                 <>
-                  <h1>Experience</h1>
+                  <h1>My Writtings</h1>
                 </>
               </div>
             )}
@@ -84,7 +86,7 @@ const NestedCircles = () => {
                 onClick={() => changeSmallCircles("skill")}
               >
                 <>
-                  <h1>Skills</h1>
+                  <h1>About me!</h1>
                 </>
               </div>
             )}
